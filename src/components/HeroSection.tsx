@@ -16,7 +16,7 @@ const stats: StatItem[] = [
   { value: '3', label: 'DB Technologies' },
 ];
 
-const resumeHref = '/assets/Gaurav_Kumar_Resume.pdf';
+const resumeHref = '/assets/Gaurav%20Kumar%20Resume.pdf';
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false);
