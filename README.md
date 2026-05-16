@@ -1,99 +1,156 @@
-# Gaurav Portfolio
+# Gaurav Kumar - **Link**: [Portfolio](https://gaurav-kumar-portfoliio.netlify.app/)
 
-A personal portfolio site for Gaurav Kumar, rebuilt as a Vite + React application with TypeScript and Tailwind CSS.
+A modern, responsive personal portfolio website showcasing Java full-stack development expertise, projects, and technical skills.
 
-## Overview
+## 🎯 Features
 
-The site showcases:
+- **Modern Design**: Clean, glassmorphic UI with gradient accents
+- **Responsive Layout**: Fully responsive across all devices
+- **Project Showcase**: Detailed project cards with tech stack, descriptions, and GitHub links
+- **Skills Display**: Organized technical skills by category
+- **Experience Timeline**: Professional experience and training details
+- **Contact Section**: Easy ways to get in touch
+- **Smooth Navigation**: Smooth scroll and navigation links
+- **Performance Optimized**: Built with Vite for fast builds
 
-- A typed hero section with resume access
-- About, skills, experience, projects, and contact sections
-- A responsive navigation bar with section highlighting
-- Animated background effects and project cards
+## 🛠️ Tech Stack
 
-## Tech Stack
+- **Frontend**: ReactJS
+- **Styling**: Tailwind CSS, Custom CSS
+- **Build Tool**: Vite
+- **Package Manager**: npm
+- **Version Control**: Git
 
-- React 19
-- Vite
-- TypeScript
-- Tailwind CSS
-- Recharts
-- Lucide React
+## 📋 Projects Featured
 
-## Getting Started
+### 1. BloggingApp
+- **Stack**: Java, Spring Boot, Hibernate, MySQL, Bootstrap
+- **Description**: Full-stack blogging platform with MVC architecture and CRUD operations
+- **Link**: [GitHub](https://github.com/ergauravk)
 
-1. Install dependencies:
+### 2. CBSE Website
+- **Stack**: Java, HTML, CSS, Oracle Database, JDBC, Tomcat
+- **Description**: Student record management system with database connectivity
+- **Link**: [GitHub](https://github.com/ergauravk)
 
-   ```bash
-   npm install
-   ```
+### 3. SecureVault
+- **Stack**: ReactJS, Tailwind CSS, JavaScript, Local Storage
+- **Description**: Responsive password management web app with secure local storage
+- **Link**: [GitHub](https://github.com/ergauravk/SecureVault)
 
-2. Start the development server:
+## 🚀 Getting Started
 
-   ```bash
-   npm run dev
-   ```
+### Prerequisites
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-3. Open the app in your browser:
+### Installation
 
-   ```text
-   http://localhost:4028
-   ```
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd gaurav-portfolio
+```
 
-## Available Scripts
+2. Install dependencies:
+```bash
+npm install
+```
 
-- `npm run dev` - Start the Vite development server on port 4028
-- `npm run build` - Build the app for production
-- `npm run start` - Preview the production build locally
-- `npm run lint` - Run ESLint across the project
-- `npm run lint:fix` - Auto-fix lint issues
-- `npm run format` - Format source files with Prettier
-- `npm run type-check` - Run TypeScript type checking
+### Development
 
-## Project Structure
+Run the development server:
+```bash
+npm run dev
+```
 
-```text
-gauravportfolio/
-├── index.html
-├── vite.config.ts
-├── package.json
+The portfolio will be available at `http://localhost:5173`
+
+### Build
+
+Create a production build:
+```bash
+npm run build
+```
+
+### Preview
+
+Preview the production build locally:
+```bash
+npm run preview
+```
+
+## 📁 Project Structure
+
+```
+gaurav-portfolio/
 ├── public/
-│   ├── favicon.ico
+│   ├── pic.jpg              # Avatar image
+│   ├── vault.png            # SecureVault project image
+│   ├── Gaurav_Kumar_Resume.pdf
+│   └── favicon.svg
+├── src/
+│   ├── App.jsx              # Main component
+│   ├── App.css              # Main styles
+│   ├── main.jsx             # Entry point
+│   ├── index.css            # Global styles
 │   └── assets/
-│       ├── Gaurav Resume.pdf
-│       └── images/
-└── src/
-    ├── App.tsx
-    ├── main.tsx
-    ├── app/
-    │   └── page.tsx
-    ├── components/
-    │   ├── AboutSection.tsx
-    │   ├── ContactSection.tsx
-    │   ├── ExperienceSection.tsx
-    │   ├── HeroSection.tsx
-    │   ├── Navbar.tsx
-    │   ├── ParticleBackground.tsx
-    │   ├── ProjectsSection.tsx
-    │   ├── SkillsSection.tsx
-    │   └── ui/
-    └── styles/
-        ├── index.css
-        └── tailwind.css
+│       ├── hero.png         # Project demo image
+│       ├── react.svg
+│       └── vite.svg
+├── index.html               # HTML template
+├── package.json             # Project dependencies
+├── vite.config.js           # Vite configuration
+└── eslint.config.js         # ESLint configuration
 ```
 
-## Resume Asset
+## 🎨 Sections
 
-The resume used by the site is stored at:
+- **Hero**: Introduction with avatar, call-to-action buttons, and contact links
+- **About**: Personal background and key highlights
+- **Skills**: Technical skills organized by category (Languages, Frontend, Tools, Databases)
+- **Experience**: Professional training and work experience
+- **Projects**: Detailed project showcase with images, descriptions, and links
+- **Education**: Academic background
+- **Contact**: Email and social media links
 
-```text
-/public/assets/Gaurav Resume.pdf
-```
+## 💡 Skills
 
-It is linked from the hero section and the navbar as a downloadable/openable asset.
+**Languages**: Java, Python
 
-## Notes
+**Frontend**: ReactJS, HTML, Tailwind CSS
 
-- The app now boots through `src/main.tsx` and `index.html`, not the Next.js app router.
-- The existing section components were kept and wired into the Vite entry with minimal changes.
-- The project still keeps the original Next-related files in the repo, but the runtime path is Vite.
+**Tools**: VS Code, IntelliJ, Git, Maven, Postman
+
+**Databases**: MySQL, Oracle, MongoDB
+
+## 📞 Contact
+
+- **Email**: [ergauravkumar2005@gmail.com](mailto:ergauravkumar2005@gmail.com)
+- **Phone**: +91-6206472920
+- **GitHub**: [github.com/ergauravk](https://github.com/ergauravk)
+- **LinkedIn**: [Gaurav Kumar](http://www.linkedin.com/in/gaurav-kumar-01b6a8234)
+
+## 🎓 Education
+
+**BTech, Computer Science & Technology**
+- Bhai Gurdas Institute of Engineering and Technology, Punjab
+- 2021 – 2025
+- CGPA: 7.8
+
+## 🔧 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+---
+
+**Last Updated**: May 2026
+
+**Status**: Active Development
