@@ -80,6 +80,15 @@ export default function ProjectsSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const [visible, setVisible] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const isCoarsePointerRef = useRef(false);
+
+  useEffect(() => {
+    isCoarsePointerRef.current =
+      typeof window !== 'undefined' &&
+      window.matchMedia &&
+      window.matchMedia('(pointer: coarse)').matches;
+  }, []);
+
 
   useEffect(() => {
     const el = sectionRef.current;
@@ -127,7 +136,22 @@ export default function ProjectsSection() {
             borderColor: hoveredIndex === i ? `${project.accent}33` : undefined
           }}
           onMouseEnter={() => setHoveredIndex(i)}
-          onMouseLeave={() => setHoveredIndex(null)}>
+          onMouseLeave={() => setHoveredIndex(null)}
+          style={{
+            transitionDelay: `${0.1 + i * 0.15}s`,
+            transform:
+              hoveredIndex === i
+                ? 'translateY(-8px) perspective(1000px) rotateX(2deg) rotateY(-2deg)'
+                : undefined,
+            boxShadow:
+              hoveredIndex === i
+                ? `0 36px 80px rgba(0,0,0,0.65), 0 0 40px ${project.accent}22`
+                : undefined,
+            transition:
+              'transform 0.35s cubic-bezier(0.16,1,0.3,1), box-shadow 0.35s ease, opacity 0.7s ease',
+            borderColor: hoveredIndex === i ? `${project.accent}33` : undefined,
+          }}>
+
           
             {/* Image */}
             <div className="overflow-hidden relative" style={{ aspectRatio: '16/9' }}>

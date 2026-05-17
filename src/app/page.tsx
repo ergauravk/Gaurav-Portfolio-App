@@ -8,7 +8,8 @@ import SkillsSection from '@/components/SkillsSection';
 import ExperienceSection from '@/components/ExperienceSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import ContactSection from '@/components/ContactSection';
-import ParticleBackground from '@/components/ParticleBackground';
+import ThreeSceneBackground from '@/components/ThreeSceneBackground';
+
 
 export default function HomePage() {
   const [activeSection, setActiveSection] = useState('home');
@@ -53,8 +54,9 @@ export default function HomePage() {
         fontFamily: '"DM Sans", system-ui, -apple-system, sans-serif',
       }}
     >
-      {/* Particle Background */}
-      {mounted && <ParticleBackground />}
+      {/* 3D Background */}
+      {mounted && <ThreeSceneBackground />}
+
 
       {/* Ambient background orbs */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
